@@ -45,7 +45,7 @@ namespace BigSorting
     {
         public static void Main(string[] args)
         {
-            // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
 
@@ -59,10 +59,10 @@ namespace BigSorting
 
             List<string> result = Result.BigSorting(unsorted);
 
-            Console.WriteLine(String.Join("\n", result));
+            textWriter.WriteLine(String.Join("\n", result));
 
-            // textWriter.Flush();
-            // textWriter.Close();
+            textWriter.Flush();
+            textWriter.Close();
         }
     }
 }

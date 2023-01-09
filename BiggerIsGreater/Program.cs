@@ -55,14 +55,6 @@ namespace BiggerIsGreater
 
         public static string BiggerIsGreater(string w)
         {
-            // string result = NextPermutation(w);
-            // while (NextPermutation(result) != NO_ANSWER && NextPermutation(result).CompareTo(w) == 1) // && NextPermutation(result).CompareTo(result) == -1)
-            // {
-            //     if (result.CompareTo(NextPermutation(result)) == -1) break;
-            //     result = NextPermutation(result);
-            // }
-
-            // if (result.Equals(w)) return NO_ANSWER;
             return NextPermutation(w);
         }
 
@@ -73,20 +65,6 @@ namespace BiggerIsGreater
         public static void Main(string[] args)
         {
             Console.WriteLine(Result.BiggerIsGreater("lmno"));
-            // Console.WriteLine("onml".CompareTo("lmon"));
-            // Console.WriteLine("onml".CompareTo("lmno"));
-            // List<string> tests = new List<string> { "lmno", "dcba", "dcbb", "abdc", "abcd", "fedcbabcd" };
-
-            // foreach (string test in tests)
-            // {
-            //     Console.WriteLine(Result.BiggerIsGreater(test));
-            // }
         }
     }
 }
-
-// ba
-// no answer
-// hegf
-// dhkc
-// hcdk

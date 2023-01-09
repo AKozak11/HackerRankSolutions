@@ -61,7 +61,7 @@ namespace FraudActivityNotifications
     {
         public static void Main(string[] args)
         {
-            // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
 
@@ -73,10 +73,10 @@ namespace FraudActivityNotifications
 
             int result = Result.ActivityNotifications(expenditure, d);
 
-            Console.WriteLine(result);
+            textWriter.WriteLine(result);
 
-            // textWriter.Flush();
-            // textWriter.Close();
+            textWriter.Flush();
+            textWriter.Close();
         }
     }
 }

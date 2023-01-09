@@ -55,11 +55,11 @@ namespace ModifiedKaprekarNumbers
     {
         public static void Main(string[] args)
         {
-            // Result.kaprekarNumbers(1, 99999);
-            // Console.WriteLine(Result.IsKaprekarNumber(45));
+            Result.kaprekarNumbers(1, 99999);
+            Console.WriteLine(Result.IsKaprekarNumber(45));
             Console.WriteLine(Result.IsKaprekarNumber(82656));
-            // Console.WriteLine(Result.IsKaprekarNumber(55));
-            // Console.WriteLine(Result.IsKaprekarNumber(77));
+            Console.WriteLine(Result.IsKaprekarNumber(55));
+            Console.WriteLine(Result.IsKaprekarNumber(77));
         }
     }
 }

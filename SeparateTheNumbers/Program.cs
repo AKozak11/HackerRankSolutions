@@ -17,12 +17,6 @@ namespace SeparateTheNumbers
     class Result
     {
 
-        /*
-         * Complete the 'separateNumbers' function below.
-         *
-         * The function accepts STRING s as parameter.
-         */
-
         public static void SeparateNumbers(string s)
         {
             if (s[0] == '0') { Console.WriteLine("NO"); return; }
@@ -67,56 +61,3 @@ namespace SeparateTheNumbers
         }
     }
 }
-
-
-
-
-// alternate solution
-// public static void separateNumbers(string s)
-//     {
-//             if (s[0] == '0') { Console.WriteLine("NO"); return; }
-//             if (s.Length == 1) { Console.WriteLine("NO"); return; }
-
-//             bool isB = false;
-//             string curStr = string.Empty;
-//             List<string> splitArr = new List<string>();
-
-//             for (int i = 0; i < s.Length/2; i++)
-//             {
-//                 curStr = s.Substring(0, (i + 1));
-//                 long current = long.Parse(curStr);
-//                 splitArr = new List<string>{curStr};
-
-//                 for (int j = (i + 1); j < s.Length; j += curStr.Length)
-//                 {
-//                     // find next largest substring
-//                     // either same length as current or one digit larger
-//                     if (s[0] == '0' || (j + curStr.Length) > s.Length) { isB = false; break; }
-
-//                     string nextStr = s.Substring(j, curStr.Length);
-//                     long next = long.Parse(nextStr);
-//                     if (next < current)
-//                     {
-//                         if ((j + curStr.Length + 1) > s.Length)
-//                         {
-//                             isB = false;
-//                             break;
-//                         }
-//                         nextStr = s.Substring(j, curStr.Length + 1);
-//                         next = long.Parse(nextStr);
-//                     }
-
-//                     if ((next - current) == 1)
-//                     {
-//                         isB = true;
-//                         curStr = nextStr;
-//                         current = next;
-//                         splitArr.Add(curStr);
-//                     } else isB = false;
-//                     if (!isB) break; // next split does not meet conditions, try next iteration
-//                 }
-//                 if (isB) break;
-//             }
-//             string result = isB ? $"YES {splitArr[0]}" : "NO";
-//             Console.WriteLine(result);
-//         }

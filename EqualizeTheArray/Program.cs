@@ -15,14 +15,6 @@ namespace EqualizeTheArray
 {
     class Result
     {
-
-        /*
-         * Complete the 'equalizeArray' function below.
-         *
-         * The function is expected to return an INTEGER.
-         * The function accepts INTEGER_ARRAY arr as parameter.
-         */
-
         public static int EqualizeArray(List<int> arr)
         {
             Dictionary<int, int> myDic = new Dictionary<int, int>();

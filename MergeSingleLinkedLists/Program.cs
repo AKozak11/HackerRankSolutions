@@ -70,18 +70,6 @@ namespace meh
                 }
             }
         }
-
-        // Complete the mergeLists function below.
-
-        /*
-         * For your reference:
-         *
-         * SinglyLinkedListNode {
-         *     int data;
-         *     SinglyLinkedListNode next;
-         * }
-         *
-         */
         static SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2)
         {
             SinglyLinkedList list3 = new SinglyLinkedList();

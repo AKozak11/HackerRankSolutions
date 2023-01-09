@@ -58,10 +58,6 @@ namespace FuckThis
     {
         public static void Main(string[] args)
         {
-            // string meh = "MEHHHHH";
-            // Console.Write($"{meh}");
-            // meh.Insert(meh.Length, "P");
-            // Console.Write($"{meh}");
             Console.WriteLine(Result.AppendAndDelete("qwerasdf", "qwerbsdf", 6));
             Console.WriteLine(Result.AppendAndDelete("y", "yu", 2));
         }

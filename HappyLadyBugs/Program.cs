@@ -16,14 +16,6 @@ namespace HappyLadyBugs
 {
     class Result
     {
-
-        /*
-         * Complete the 'happyLadybugs' function below.
-         *
-         * The function is expected to return a STRING.
-         * The function accepts STRING b as parameter.
-         */
-
         public static string HappyLadybugs(string b)
         {
             bool happy = true;
@@ -73,7 +65,7 @@ namespace HappyLadyBugs
     {
         public static void Main(string[] args)
         {
-            // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             int g = Convert.ToInt32(Console.ReadLine().Trim());
 
@@ -84,12 +76,11 @@ namespace HappyLadyBugs
                 string b = Console.ReadLine();
 
                 string result = Result.HappyLadybugs(b);
-                Console.WriteLine(result);
-                // textWriter.WriteLine(result);
+                textWriter.WriteLine(result);
             }
 
-            // textWriter.Flush();
-            // textWriter.Close();
+            textWriter.Flush();
+            textWriter.Close();
         }
     }
 }

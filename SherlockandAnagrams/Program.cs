@@ -50,7 +50,7 @@ namespace SherlockAnagrams
     {
         public static void Main(string[] args)
         {
-            // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             int q = Convert.ToInt32(Console.ReadLine().Trim());
 
@@ -60,11 +60,11 @@ namespace SherlockAnagrams
 
                 int result = Result.SherlockAndAnagrams(s);
 
-                Console.WriteLine(result);
+                textWriter.WriteLine(result);
             }
 
-            // textWriter.Flush();
-            // textWriter.Close();
+            textWriter.Flush();
+            textWriter.Close();
         }
     }
 }
